@@ -33,7 +33,4 @@ You can safely run `rcup` multiple times to update.
 What's in it?
 -------------
 
-[git](http://git-scm.com/) configuration:
-
-* `l` alias for tight, colored, log output.
-* pure prompt theme
+pure prompt theme
