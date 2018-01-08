@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-brew install htop
-brew install antigen
+# This formula (htop) either does not compile or function as expected on macOS
+# versions newer than Sierra due to an upstream incompatibility.
+# brew install htop
 
-brew install gpg
+brew install antigen
+brew install hub
 
 # Homebrew-cask
 brew tap caskroom/cask
@@ -16,4 +18,3 @@ brew cask install google-drive
 brew cask install skype
 brew cask install whatsapp
 brew cask install telegram
-

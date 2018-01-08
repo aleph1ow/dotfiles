@@ -8,20 +8,71 @@ alias bu="bundle update"
 alias bus="bundle update --source"
 alias fs="foreman start"
 alias sidekill="ps -ef | grep sidekiq | grep -v grep | awk '{print $2}' | xargs kill -9"
-alias fakill3="ps -ef | grep fakes3 | grep -v grep | awk '{print $2}' | xargs kill -9"
-alias bss="bin/spring stop"
-alias gsa='git diff-tree --no-commit-id --name-only -r HEAD | xargs atom'
-alias atom="atom --disable-gpu ."
+alias a="atom ."
+alias berconsole="./bin/rails c"
+alias berserver="./bin/rails s"
+alias berserverbind="./bin/rails s -b "
+alias berspec="./bin/rspec"
 
-postgres_path="~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
-alias post-on="launchctl load -F $postgres_path"
-alias post-off="launchctl unload -F $postgres_path"
+# When a gem is used locally it will not be possible to update it without unsetting it to be used locally
+# This function will:
+#  - unset the gem as local
+#  - update the gem with --source option
+#  - set the gem as local again
+busl () { bundle config --delete local.$* && bundle update --source $* &&  bundle config local.$* ../$* }
 
-alias ruby-up="brew update && brew upgrade ruby-build"
+# Unix
+alias tlf="tail -f"
+alias ln='ln -v'
+alias mkdir='mkdir -p'
+alias ...='../..'
+alias l='ls'
+alias ll='ls -al'
+alias lh='ls -Alh'
+alias -g G='| grep'
+alias -g M='| less'
+alias -g L='| wc -l'
+alias -g ONE="| awk '{ print \$1}'"
+alias e="$EDITOR"
+alias v="$VISUAL"
 
-meteo() {
-  # usage:
-  # meteo Rome
-  url="wttr.in/"+$1
-  curl $url
-}
+# git
+alias gbrs="g browse"
+
+# Bundler
+alias b="bundle"
+alias be="bundle exec"
+
+#Invoker
+alias ik="invoker"
+alias iks="invoker start invoker.ini"
+alias ikr="invoker remove"
+alias ika="invoker add"
+alias ikl="invoker list"
+
+alias dotfiles="cd ~/dotfiles"
+
+#Nebulab
+
+alias nebulab="cd ~/Code/nebulab"
+alias soliton="cd ~/Code/soliton"
+alias cangaroo="cd ~/Code/cangaroo"
+alias robby="cd ~/Code/robby"
+alias my_shop="cd ~/Code/tmp/my-shop"
+
+#Net2B
+alias histreet="cd ~/Code/net2b/histreet"
+
+#TheFloydLeg
+alias floyd="cd ~/Code/floyd"
+alias solidus_shipwire="cd ~/Code/solidus_shipwire"
+
+# Moddedeuros
+alias moddedeuros="cd ~/Code/moddedeuros"
+
+#Yolo
+alias yolo="cd ~/Code/yolo"
+
+#aleph-code
+alias souleloquy.com="cd ~/Home/aleph-code/souleloquy"
+alias abruzzotourgourmet="cd ~/Code/developaolo/abruzzotourgourmet"

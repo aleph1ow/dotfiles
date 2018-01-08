@@ -1,11 +1,7 @@
-kennyadsl dotfiles
+aleph1ow dotfiles
 ===============
 
-Inspired by [croaky](https://github.com/croaky/dotfiles).
-
-I use [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles) and
-kennyadsl/dotfiles together using the `*.local` convention described in
-thoughtbot/dotfiles.
+Inspired by [kennyadsl](https://github.com/kennyadsl/dotfiles).
 
 Requirements
 ------------
@@ -24,11 +20,11 @@ Install
 
 Clone onto your laptop:
 
-    git clone git://github.com/kennyadsl/dotfiles.git
+    git clone git://github.com/aleph1ow/dotfiles.git
 
 Install:
 
-    env RCRC=$HOME/croaky/dotfiles/rcrc rcup
+    env RCRC=$HOME/dotfiles/rcrc rcup
 
 This will create symlinks for config files in your home directory.
 

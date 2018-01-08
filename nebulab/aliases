@@ -1,0 +1,40 @@
+# Unix
+alias tlf="tail -f"
+alias ln='ln -v'
+alias mkdir='mkdir -p'
+alias ...='../..'
+alias l='ls'
+alias ll='ls -al'
+alias lh='ls -Alh'
+alias -g G='| grep'
+alias -g M='| less'
+alias -g L='| wc -l'
+alias -g ONE="| awk '{ print \$1}'"
+alias e="$EDITOR"
+alias v="$VISUAL"
+
+# git
+alias gpl="git pull"
+alias git=hub
+
+# Bundler
+alias b="bundle"
+
+# Tests and Specs
+alias t="ruby -I test"
+alias cuc="bundle exec cucumber"
+
+# Rails
+alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
+alias m="migrate"
+alias rk="rake"
+alias s="rspec"
+
+# Tmux
+alias txpair="tmux new -s pair"
+alias txnew="tmux new -s"
+alias txatt="tmux attach -t"
+alias txls="tmux list-sessions"
+
+# Include custom aliases
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local
