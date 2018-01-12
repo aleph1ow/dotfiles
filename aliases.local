@@ -54,6 +54,7 @@ alias dotfiles="cd ~/dotfiles"
 
 #Nebulab
 
+alias code="cd ~/Code"
 alias nebulab="cd ~/Code/nebulab"
 alias soliton="cd ~/Code/soliton"
 alias cangaroo="cd ~/Code/cangaroo"
