@@ -18,13 +18,15 @@ Install [rcm](https://github.com/mike-burns/rcm).
 Install
 -------
 
-Clone onto your laptop:
+Clone onto your home:
 
     git clone git://github.com/aleph1ow/dotfiles.git
 
+Rename it to `.dotfiles`
+
 Install:
 
-    env RCRC=$HOME/dotfiles/rcrc rcup
+    env RCRC=$HOME/.dotfiles/rcrc rcup
 
 This will create symlinks for config files in your home directory.
 
