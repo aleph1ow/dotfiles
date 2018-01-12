@@ -1,0 +1,10 @@
+call plug#begin('~/.vim/bundle')
+
+Plug 'sheerun/vim-polyglot'                  " A solid language pack for Vim.
+
+call plug#end()
+
+" Local config
+if filereadable($HOME . "/.vimrc.local")
+  source ~/.vimrc.local
+endif
