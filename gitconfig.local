@@ -1,7 +1,7 @@
 [user]
   name = Paolo Tatone
-  email = paolo.tatone@gmail.com
-  signingkey = FF0D49E6D92061C7
+  email = paolotatone@nebulab.it
+  signingkey = 79A128E5FB295072
 [alias]
   ci = commit
   cm = commit -m

@@ -50,7 +50,7 @@ alias ikr="invoker remove"
 alias ika="invoker add"
 alias ikl="invoker list"
 
-alias dotfiles="cd ~/dotfiles"
+alias dotfiles="cd ~/.dotfiles"
 
 #Nebulab
 

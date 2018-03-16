@@ -11,10 +11,9 @@ brew install hub
 brew tap caskroom/cask
 
 # Native apps
-brew cask install iterm2
-brew cask install dropbox
-brew cask install google-chrome
-brew cask install google-drive
-brew cask install skype
-brew cask install whatsapp
-brew cask install telegram
+# brew cask install dropbox
+# brew cask install google-chrome
+# brew cask install google-drive
+# brew cask install skype
+# brew cask install whatsapp
+# brew cask install telegram
