@@ -31,3 +31,4 @@ cdpath=(~/Code/*)
 export GPG_TTY=$(tty)
 
 export PATH="$HOME/.bin:$PATH"
+source /Users/aleph/.asdf/asdf.sh
