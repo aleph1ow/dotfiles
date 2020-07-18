@@ -26,8 +26,6 @@
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
-[commit]
-  template = ~/.gitmessage
 [fetch]
   prune = true
 [credential]
@@ -36,3 +34,11 @@
   protocol = https
 [include]
   path = .gitconfig.local
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Paolo Tatone
+	email = paolotatone@nebulab.it

@@ -9,9 +9,9 @@ alias bus="bundle update --source"
 alias fs="foreman start"
 alias sidekill="ps -ef | grep sidekiq | grep -v grep | awk '{print $2}' | xargs kill -9"
 alias a="atom ."
-alias berconsole="./bin/rails c"
-alias berserver="./bin/rails s"
-alias berserverbind="./bin/rails s -b "
+alias berc="./bin/rails c"
+alias bers="./bin/rails s"
+alias bersbind="./bin/rails s -b `ifconfig en0 | grep netmask | awk '{print $2}'`"
 alias berspec="./bin/rspec"
 
 # When a gem is used locally it will not be possible to update it without unsetting it to be used locally
@@ -53,27 +53,14 @@ alias ikl="invoker list"
 alias dotfiles="cd ~/.dotfiles"
 
 #Nebulab
-
-alias code="cd ~/Code"
-alias nebulab="cd ~/Code/nebulab"
-alias soliton="cd ~/Code/soliton"
-alias cangaroo="cd ~/Code/cangaroo"
-alias robby="cd ~/Code/robby"
-alias my_shop="cd ~/Code/tmp/my-shop"
-
-#Net2B
-alias histreet="cd ~/Code/net2b/histreet"
-
-#TheFloydLeg
+alias squad="cd ~/Code/squad"
 alias floyd="cd ~/Code/floyd"
-alias solidus_shipwire="cd ~/Code/solidus_shipwire"
 
-# Moddedeuros
-alias moddedeuros="cd ~/Code/moddedeuros"
+#developpaolo
+alias souleloquy="cd ~/Code/developaolo/souleloquy"
+alias vue_projects="cd ~/Code/developaolo/vue_projects"
+alias tourcms_booking_plugin="cd /Applications/MAMP/htdocs/venice-carnival-2/wp-content/plugins/tourcms-booking"
+alias venice_carnival="cd /Applications/MAMP/htdocs/venice-carnival-2"
 
-#Yolo
-alias yolo="cd ~/Code/yolo"
-
-#aleph-code
-alias souleloquy.com="cd ~/Home/aleph-code/souleloquy"
-alias abruzzotourgourmet="cd ~/Code/developaolo/abruzzotourgourmet"
+#games
+alias tetris="~/Code/developaolo/tinytetris/tinytetris"
